@@ -1,0 +1,27 @@
+# Netlify redirects for clean URLs
+# Maps /slug/ → /slug.html
+
+/drywall-lapa-sp/                                           /drywall-lapa-sp.html                                           200
+/forro-de-gesso-rebaixamento-teto/                          /forro-de-gesso-rebaixamento-teto.html                          200
+/gesso-liso-acabamento/                                     /gesso-liso-acabamento.html                                     200
+/pintura-residencial-comercial/                             /pintura-residencial-comercial.html                             200
+/reformas-acabamentos/                                      /reformas-acabamentos.html                                      200
+/gesseiro-lapa-sp/                                          /gesseiro-lapa-sp.html                                          200
+/regioes-atendidas/                                         /regioes-atendidas.html                                         200
+/sobre/                                                     /sobre.html                                                     200
+/contato/                                                   /contato.html                                                   200
+/projetos/                                                  /projetos.html                                                  200
+/blog/                                                      /blog.html                                                      200
+/politica-de-privacidade/                                   /politica-de-privacidade.html                                   200
+/termos-de-uso/                                             /termos-de-uso.html                                             200
+
+# Blog articles
+/blog/drywall-ou-alvenaria-como-escolher/                   /blog/drywall-ou-alvenaria-como-escolher.html                   200
+/blog/o-que-avaliar-antes-de-instalar-forro-de-gesso/       /blog/o-que-avaliar-antes-de-instalar-forro-de-gesso.html       200
+/blog/rebaixamento-de-teto-planejamento-iluminacao-acabamento/ /blog/rebaixamento-de-teto-planejamento-iluminacao-acabamento.html 200
+/blog/gesso-liso-preparacao-superficie-resultado-final/     /blog/gesso-liso-preparacao-superficie-resultado-final.html     200
+/blog/como-planejar-pintura-apos-servicos-de-gesso/         /blog/como-planejar-pintura-apos-servicos-de-gesso.html         200
+/blog/o-que-considerar-ao-contratar-gesseiro-lapa-sp/       /blog/o-que-considerar-ao-contratar-gesseiro-lapa-sp.html       200
+
+# 404
+/*                                                          /404.html                                                       404

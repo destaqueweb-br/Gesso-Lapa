@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Bloquear página de erro (retorna 404 via configuração de servidor)
+Disallow: /404.html
+
+# Bloquear páginas noindex (privacidade/termos não precisam ser rastreadas)
+Disallow: /politica-de-privacidade/
+Disallow: /termos-de-uso/
+
+# Sitemap
+Sitemap: https://gessolapa.com.br/sitemap.xml
