@@ -53,6 +53,51 @@ function rastrearCTA(acao, dados = {}) {
 }
 
 /* ============================================================
+   ROUTER INTELIGENTE PARA GITHUB PAGES & HOSPEDAGEM
+   Ajusta dinamicamente links internos caso o site esteja em
+   subpasta de repositório (ex.: destaqueweb-br.github.io/Gesso-Lapa/)
+   ============================================================ */
+const GitHubPagesRouter = (() => {
+  function getRepoPrefix() {
+    const isGitHub = window.location.hostname.endsWith('github.io');
+    const match = window.location.pathname.match(/^\/([^\/]+)\//);
+    return (isGitHub && match) ? `/${match[1]}` : '';
+  }
+
+  function normalizarLinks() {
+    const repoPrefix = getRepoPrefix();
+    if (!repoPrefix) return;
+
+    document.querySelectorAll('a[href^="/"]').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href && !href.startsWith(repoPrefix) && !href.startsWith('//')) {
+        link.setAttribute('href', `${repoPrefix}${href === '/' ? '/' : href}`);
+      }
+    });
+  }
+
+  function init() {
+    normalizarLinks();
+
+    // Interceptor global de cliques para segurança total
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest('a');
+      if (!a) return;
+      const href = a.getAttribute('href');
+      if (!href) return;
+
+      const repoPrefix = getRepoPrefix();
+      if (repoPrefix && href.startsWith('/') && !href.startsWith(repoPrefix) && !href.startsWith('//')) {
+        e.preventDefault();
+        window.location.href = `${repoPrefix}${href === '/' ? '/' : href}`;
+      }
+    });
+  }
+
+  return { init, normalizarLinks };
+})();
+
+/* ============================================================
    MÓDULO — NAVEGAÇÃO E MENU MOBILE
    ============================================================ */
 const Navigation = (() => {
@@ -363,6 +408,7 @@ const ContactForm = (() => {
    INICIALIZAÇÃO NO CARREGAMENTO
    ============================================================ */
 document.addEventListener('DOMContentLoaded', () => {
+  GitHubPagesRouter.init();
   Navigation.init();
   HeaderScroll.init();
   FAQAccordion.init();
