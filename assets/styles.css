@@ -3380,9 +3380,11 @@ html, body {
   flex-shrink: 0;
 }
 
-.site-logo svg {
-  height: 42px;
+.site-logo svg,
+.site-logo img {
+  height: 46px;
   width: auto;
+  max-width: 230px;
   display: block;
 }
 
@@ -4287,6 +4289,14 @@ html, body {
   margin-bottom: 1.25rem;
 }
 
+.footer-logo svg,
+.footer-logo img {
+  height: 48px;
+  width: auto;
+  max-width: 240px;
+  display: block;
+}
+
 .footer-tagline {
   font-size: 0.9rem;
   line-height: 1.65;
@@ -4570,4 +4580,357 @@ html, body {
 
 .nav-dropdown-toggle:hover {
   color: #C8973A;
+}
+
+/* ============================================================
+   ESTILOS COMPLETOS DO BLOG E ARTIGOS
+   ============================================================ */
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 3.5rem;
+  align-items: start;
+  padding: 3rem 0 5rem;
+}
+
+@media (max-width: 1024px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2rem 0 4rem;
+  }
+}
+
+.article-body {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.article-header {
+  margin-bottom: 2.25rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #E8E8E5;
+}
+
+.article-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 3.8vw, 2.75rem);
+  color: #1A202C;
+  line-height: 1.25;
+  margin-bottom: 0.85rem;
+  font-weight: 700;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.9rem;
+  color: #6B7280;
+}
+
+.article-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.article-lead {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #2D3748;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: #F8F8F6;
+  border-left: 4px solid #C8973A;
+  border-radius: 0 8px 8px 0;
+}
+
+.article-content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+  color: #1A202C;
+  margin: 2.5rem 0 1rem;
+  line-height: 1.35;
+}
+
+.article-content h3 {
+  font-size: 1.25rem;
+  color: #2D3748;
+  margin: 1.75rem 0 0.75rem;
+  font-weight: 600;
+}
+
+.article-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 1.25rem;
+}
+
+.article-content ul,
+.article-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.article-content li {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: #374151;
+  margin-bottom: 0.65rem;
+}
+
+.article-content strong {
+  color: #1A202C;
+}
+
+.article-content figure {
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #E8E8E5;
+}
+
+.article-content figure img {
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+  object-fit: cover;
+  display: block;
+}
+
+.article-content figcaption {
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  color: #6B7280;
+  background: #F8F8F6;
+  text-align: center;
+}
+
+/* Sidebar do artigo */
+.article-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: sticky;
+  top: 90px;
+}
+
+.sidebar-widget {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E5;
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar-widget h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+  color: #1A202C;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #C8973A;
+}
+
+.sidebar-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-widget li {
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #F3F4F6;
+  padding-bottom: 0.75rem;
+}
+
+.sidebar-widget li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sidebar-widget li a {
+  color: #4B5563;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: block;
+  transition: all 0.2s;
+}
+
+.sidebar-widget li a:hover {
+  color: #C8973A;
+  padding-left: 0.25rem;
+}
+
+.sidebar-cta {
+  background: linear-gradient(135deg, #1A202C 0%, #2D3748 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.sidebar-cta h3 {
+  color: #FFFFFF;
+  border-bottom-color: #E8C77E;
+}
+
+.sidebar-cta p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* ============================================================
+   BLOG ARTICLE â€” CTA BOX & WHATSAPP BUTTON
+   ============================================================ */
+.article-cta {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #0C2340 0%, #1A3A5C 100%);
+  border-radius: 14px;
+  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  border-left: 5px solid #C8973A;
+}
+
+.cta-box__text {
+  flex: 1;
+  min-width: 200px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.cta-box__text strong {
+  color: #E8C77E;
+}
+
+.btn--whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #25D366;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 50px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+}
+
+.btn--whatsapp:hover {
+  background: #1dbc5a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+}
+
+.btn--whatsapp.btn--sm {
+  padding: 0.65rem 1.25rem;
+  font-size: 0.88rem;
+}
+
+/* ============================================================
+   BLOG ARTICLE â€” RELATED ARTICLES LIST
+   ============================================================ */
+.related-articles {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-articles li {
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #F3F4F6;
+  padding-bottom: 0.75rem;
+}
+
+.related-articles li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.related-articles a {
+  color: #2D3748;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: color 0.2s;
+  display: block;
+}
+
+.related-articles a:hover {
+  color: #C8973A;
+}
+
+/* ============================================================
+   BLOG ARTICLE â€” SIDEBAR WIDGET TITLE CLASS (h2.sidebar-widget__title)
+   ============================================================ */
+.sidebar-widget__title,
+.sidebar-widget h2,
+.sidebar-widget h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  color: #1A202C;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #C8973A;
+  font-weight: 700;
+}
+
+/* Override for sidebar-cta context */
+.sidebar-cta .sidebar-widget__title,
+.sidebar-cta h2,
+.sidebar-cta h3 {
+  color: #FFFFFF;
+  border-bottom-color: #E8C77E;
+}
+
+/* ============================================================
+   BLOG ARTICLE â€” ARTICLE AUTHOR
+   ============================================================ */
+.article-author {
+  font-size: 0.9rem;
+  color: #6B7280;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* ============================================================
+   BLOG ARTICLE â€” READING TIME
+   ============================================================ */
+.reading-time {
+  font-size: 0.88rem;
+  color: #9CA3AF;
+}
+
+/* ============================================================
+   RESPONSIVE: CTA BOX MOBILE
+   ============================================================ */
+@media (max-width: 600px) {
+  .cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+  .btn--whatsapp {
+    width: 100%;
+    justify-content: center;
+  }
 }

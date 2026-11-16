@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon: Gesso Lapa brand icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C2340'/%3E%3Cpath d='M16 4 L4 14 L6 14 L6 28 L26 28 L26 14 L28 14 Z' fill='none' stroke='%23E8C77E' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M12 28 L12 20 L20 20 L20 28' fill='none' stroke='%23E8C77E' stroke-width='2'/%3E%3Cpath d='M8 18 L16 11 L24 18' fill='%23C8973A' opacity='0.4'/%3E%3C/svg%3E" />
   <title>Drywall ou Alvenaria: Como Escolher para sua Reforma</title>
   <meta name="description" content="Saiba as diferenças entre drywall e alvenaria tradicional, e como decidir qual é melhor para cada situação em reformas residenciais e comerciais.">
   <link rel="canonical" href="https://gessolapa.com.br/blog/drywall-ou-alvenaria-como-escolher/">
@@ -57,27 +59,60 @@
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header class="site-header">
+    <!-- Skip to main content (accessibility) -->
+  <a class="skip-link" href="#main-content">Ir para o conteÃºdo principal</a>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a href="/" class="logo" aria-label="Gesso Lapa — página inicial">
-        <span class="logo-mark">GL</span>
-        <span class="logo-text">Gesso Lapa</span>
+
+      <!-- Logo Oficial Gesso Lapa -->
+      <a href="/" class="site-logo" aria-label="Gesso Lapa - PÃ¡gina inicial">
+        <img src="../../assets/images/logo.svg" alt="Gesso Lapa - Reforma em Geral" width="230" height="52" />
       </a>
-      <nav class="main-nav" aria-label="Navegação principal">
-        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
-          <span></span><span></span><span></span>
-        </button>
-        <ul id="nav-menu" class="nav-menu" role="list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/drywall-lapa-sp/">Drywall</a></li>
-          <li><a href="/forro-de-gesso-rebaixamento-teto/">Forro de Gesso</a></li>
-          <li><a href="/gesso-liso-acabamento/">Gesso Liso</a></li>
-          <li><a href="/pintura-residencial-comercial/">Pintura</a></li>
-          <li><a href="/reformas-acabamentos/">Reformas</a></li>
-          <li><a href="/blog/" class="active">Blog</a></li>
-          <li><a href="/contato/" class="btn-nav">Orçamento</a></li>
+
+      <!-- Primary Navigation -->
+      <nav class="primary-nav" id="primary-nav" aria-label="NavegaÃ§Ã£o principal">
+        <ul class="nav-list" role="list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li class="has-dropdown">
+            <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              ServiÃ§os <span class="caret" aria-hidden="true">â–¾</span>
+            </button>
+            <ul class="dropdown-menu" role="list">
+              <li><a href="/drywall-lapa-sp/">Drywall e DivisÃ³rias</a></li>
+              <li><a href="/forro-de-gesso-rebaixamento-teto/">Forros e Rebaixamento</a></li>
+              <li><a href="/gesso-liso-acabamento/">Gesso Liso</a></li>
+              <li><a href="/pintura-residencial-comercial/">Pintura</a></li>
+              <li><a href="/reformas-acabamentos/">Reformas e Acabamentos</a></li>
+              <li><a href="/gesseiro-lapa-sp/">Gesseiro na Lapa</a></li>
+            </ul>
+          </li>
+          <li><a href="/projetos/" class="nav-link">Projetos</a></li>
+          <li><a href="/blog/" class="nav-link active">Blog</a></li>
+          <li><a href="/sobre/" class="nav-link">Sobre</a></li>
+          <li><a href="/contato/" class="nav-link">Contato</a></li>
         </ul>
       </nav>
+
+      <!-- Header CTA -->
+      <a href="https://wa.me/5511927195253?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+         class="btn btn-primary btn-header-cta"
+         target="_blank" rel="noopener noreferrer" data-wa-message="OlÃ¡! Gostaria de solicitar um orÃ§amento."
+         aria-label="Solicitar orÃ§amento pelo WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Solicitar OrÃ§amento
+      </a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegaÃ§Ã£o" aria-expanded="false" aria-controls="primary-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
     </div>
   </header>
 
@@ -113,7 +148,7 @@
             <time datetime="2025-03-10" itemprop="datePublished">10 de março de 2025</time>
             <span class="reading-time">⏱ Leitura: 6 min</span>
           </div>
-          <h1 itemprop="headline">Drywall ou Alvenaria: Como Escolher para a sua Reforma</h1>
+          <h1 class="article-title" itemprop="headline">Drywall ou Alvenaria: Como Escolher para a sua Reforma</h1>
           <p class="article-author">Por <span itemprop="author">Equipe Gesso Lapa</span></p>
         </header>
 
@@ -179,7 +214,7 @@
         <aside class="article-cta" aria-label="Chamada para orçamento">
           <div class="cta-box">
             <p class="cta-box__text">💬 <strong>Precisa de orçamento?</strong> Fale conosco pelo WhatsApp e receba uma avaliação sem compromisso.</p>
-            <a href="https://wa.me/5511927195253?text=Ol%C3%A1!%20Li%20o%20blog%20da%20Gesso%20Lapa%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."  target="_blank" rel="noopener noreferrer" data-wa-message="Olá! Li o blog da Gesso Lapa e gostaria de solicitar um orçamento." class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp</a>
+            <a href="https://wa.me/5511927195253?text=Ol%C3%A1!%20Li%20o%20blog%20da%20Gesso%20Lapa%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" data-wa-message="Olá! Li o blog da Gesso Lapa e gostaria de solicitar um orçamento." class="btn btn--whatsapp">Falar pelo WhatsApp</a>
           </div>
         </aside>
 
@@ -207,48 +242,93 @@
   </main>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="/" class="logo logo--footer" aria-label="Gesso Lapa">
-          <span class="logo-mark">GL</span>
-          <span class="logo-text">Gesso Lapa</span>
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+
+      <!-- Col 1: Logo + tagline -->
+      <div class="footer-col footer-brand">
+        <a href="/" class="footer-logo" aria-label="Gesso Lapa - PÃ¡gina inicial">
+          <img src="../../assets/images/logo-footer.svg" alt="Gesso Lapa - Reforma em Geral" width="230" height="52" />
         </a>
-        <p>Serviços de gesso, drywall e pintura na Lapa e Zona Oeste de São Paulo.</p>
+        <p class="footer-tagline">Drywall, gesso liso, forros, pintura e acabamentos na Lapa, SÃ£o Paulo. Qualidade, organizaÃ§Ã£o e compromisso com o prazo.</p>
       </div>
-      <nav class="footer-nav" aria-label="Links do rodapé">
-        <h3>Serviços</h3>
-        <ul>
-          <li><a href="/drywall-lapa-sp/">Drywall</a></li>
-          <li><a href="/forro-de-gesso-rebaixamento-teto/">Forro de Gesso</a></li>
+
+      <!-- Col 2: ServiÃ§os -->
+      <nav class="footer-col footer-nav" aria-label="Links de serviÃ§os">
+        <h3 class="footer-nav-title">ServiÃ§os</h3>
+        <ul role="list">
+          <li><a href="/drywall-lapa-sp/">Drywall e DivisÃ³rias</a></li>
+          <li><a href="/forro-de-gesso-rebaixamento-teto/">Forros e Rebaixamento</a></li>
           <li><a href="/gesso-liso-acabamento/">Gesso Liso</a></li>
           <li><a href="/pintura-residencial-comercial/">Pintura</a></li>
-          <li><a href="/reformas-acabamentos/">Reformas</a></li>
+          <li><a href="/reformas-acabamentos/">Reformas e Acabamentos</a></li>
+          <li><a href="/gesseiro-lapa-sp/">Gesseiro na Lapa</a></li>
         </ul>
       </nav>
-      <nav class="footer-nav" aria-label="Links institucionais">
-        <h3>A Empresa</h3>
-        <ul>
-          <li><a href="/sobre/">Sobre nós</a></li>
+
+      <!-- Col 3: PÃ¡ginas -->
+      <nav class="footer-col footer-nav" aria-label="Links do site">
+        <h3 class="footer-nav-title">PÃ¡ginas</h3>
+        <ul role="list">
+          <li><a href="/">InÃ­cio</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/projetos/">Projetos</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/gesseiro-lapa-sp/">Gesseiro na Lapa</a></li>
+          <li><a href="/regioes-atendidas/">RegiÃµes Atendidas</a></li>
           <li><a href="/contato/">Contato</a></li>
         </ul>
       </nav>
-      <div class="footer-contact">
-        <h3>Contato</h3>
-        <p><strong>Lapa, São Paulo — SP</strong></p>
-        <a href="https://wa.me/5511927195253?text=Ol%C3%A1!%20Li%20o%20blog%20da%20Gesso%20Lapa%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."  target="_blank" rel="noopener noreferrer" data-wa-message="Olá! Li o blog da Gesso Lapa e gostaria de solicitar um orçamento." class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+
+      <!-- Col 4: Contato -->
+      <div class="footer-col footer-contact">
+        <h3 class="footer-nav-title">Contato</h3>
+        <ul role="list" class="footer-contact-list">
+          <li>
+            <span class="footer-contact-label">WhatsApp</span>
+            <a href="https://wa.me/5511927195253?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" data-wa-message="OlÃ¡! Gostaria de solicitar um orÃ§amento." aria-label="Contato pelo WhatsApp">(11) 92719-5253</a>
+          </li>
+          <li>
+            <span class="footer-contact-label">LocalizaÃ§Ã£o</span>
+            <span>Lapa, SÃ£o Paulo â€“ SP</span>
+          </li>
+          <li>
+            <span class="footer-contact-label">Atendimento</span>
+            <span>Segunda a SÃ¡bado, 8hâ€“18h</span>
+          </li>
+          <li>
+            <span class="footer-contact-label">Google</span>
+            <a href="https://www.google.com/search?q=Gesso+Lapa&amp;stick=H4sIAAAAAAAA_-NgU1I1qLA0SU5Ns0wxByJTy6TUNCuDikSLxJS0VAMDU3Mzw6RU0-RFrFzuqcXF-Qo-iQWJADU7SNU2AAAA&amp;hl=pt-BR" target="_blank" rel="noopener noreferrer" style="color:#e8c77e; text-decoration:underline;">Perfil no Google</a>
+          </li>
+        </ul>
       </div>
+
     </div>
+
+    <!-- Footer Bottom Bar -->
     <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; <span id="footer-year">2025</span> Gesso Lapa. Todos os direitos reservados.</p>
-        <p><a href="/politica-de-privacidade/">Política de Privacidade</a></p>
+      <div class="container footer-bottom-inner">
+        <p class="copyright">Â© 2024 Gesso Lapa. Todos os direitos reservados.</p>
+        <nav aria-label="Links legais" class="footer-legal-links">
+          <a href="/politica-de-privacidade/">PolÃ­tica de Privacidade</a>
+          <a href="/termos-de-uso/">Termos de Uso</a>
+        </nav>
       </div>
     </div>
   </footer>
 
-  <script src="../../assets/script.js"></script>
+  <!-- Floating WhatsApp Button -->
+  <div class="wa-float" id="wa-float">
+    <a href="https://wa.me/5511927195253?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20d%C3%BAvidas%20e%20solicitar%20or%C3%A7amento." class="wa-float-btn" target="_blank" rel="noopener noreferrer" data-wa-message="OlÃ¡! Gostaria de tirar dÃºvidas e solicitar orÃ§amento com a Gesso Lapa." aria-label="Contato pelo WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+  </div>
+
+  <script src="../../assets/script.js" defer></script>
 </body>
 </html>
+
+
+
